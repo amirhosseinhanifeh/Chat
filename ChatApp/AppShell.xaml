@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:ChatApp"
+                              FlowDirection="RightToLeft"
+       x:Class="ChatApp.AppShell">
+
+    <!-- Bottom Navigation Bar با سه تب -->
+    <TabBar>
+        <Tab Title="Search" Icon="search.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MessagesPage}" />
+        </Tab>
+        <Tab Title="پیام ها" Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+        </Tab>
+        <Tab Title="کاوش" Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ExplorePage}" />
+        </Tab>
+
+        <Tab Title="پروفایل" Icon="profile.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" />
+        </Tab>
+    </TabBar>
+
+</Shell>
